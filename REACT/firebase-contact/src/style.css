@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #5d5a5a;
+}
+
+.search::placeholder{
+    color:white;
+    /* padding: 44px; */
+    font-size: 16px;
+}
+
+.add-blur{
+    filter: blur(2px);
+}  
+
+
+.open-add-contact{
+    animation: open-add-contact 0.5s linear 0s forwards;
+}
+.close-add-contact{
+    animation: close-add-contact 0.5s linear 0s forwards;
+}
+
+@keyframes open-add-contact {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(45deg);
+        color:red;
+    }
+}
+@keyframes close-add-contact {
+    0%{
+        transform: rotate(45deg);
+        color:red;
+    }
+    100%{
+        transform: rotate(0deg);
+        color:white;
+    }
+}

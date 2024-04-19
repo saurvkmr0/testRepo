@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.search::placeholder{
+    color: white;
+    font-size: 16px;
+}
+.search{
+    background: #323334;
+    border: solid #00503c 1px;
+    height: 40px;
+    width: 285px; 
+    border-radius: 5px;
+    color: white;
+    padding:15px;
+}
+
+.container{
+    /* width: auto;  */
+    flex-grow: 1;
+    height: 100%;
+    background-image: url('./components/assets/bg5.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    padding-bottom: 50px;
+} 
+
+.food-img{
+    width:133px;
+    aspect-ratio: 1;
+}
+
+
+.glass-bg{
+    background: rgba( 199, 186, 186, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+@media (min-width: 760px) {
+    /* Styles to apply when viewport height is greater than 760px */
+    .container{
+        height:100vh;
+    }
+  }

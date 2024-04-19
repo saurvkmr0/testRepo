@@ -1,0 +1,29 @@
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    background-color: #1f1f1f;
+    /* position: relative; */
+}
+
+.frame{
+    background: rgb(146,64,162);
+    background: radial-gradient(circle, rgba(146,64,162,1) 0%, rgba(38,32,84,1) 100%);
+    z-index: 10;
+}
+
+input{
+    border:solid lightslategray 1px;
+}
+
+img{
+    height:600px;
+    aspect-ratio: inherit;
+}
+
+

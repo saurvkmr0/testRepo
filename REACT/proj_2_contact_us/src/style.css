@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Poppins;
+    list-style: none;
+}
+
+
+/* nav bar */
+.navwrap{
+    padding:0 85px;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+}
+
+.navlink ul{
+    display:flex;
+    gap:24px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    height:100%;
+}
+
+/* main section */
+.section{
+    margin:20px 0 0 198px;
+}
+
+.title{
+    width:75%;
+}
+.section h1{
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.section h6{
+    color: #5A5959;
+    font-size: 16px;
+}
+
+/* input form and image part */
+
+.frame{
+    display:flex;
+}
+
+.form{
+    width: 40%;
+    padding:40px 80px 40px 0;
+}
+
+.btns{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:32px;
+    row-gap: 17px;
+}
+
+button{
+    height:44px;
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.span-row{
+    grid-column: span 2;
+    background-color: white;
+    color:black;
+}
+
+.inputfield{
+    padding:20px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    top:24px;
+    left:30px;
+    background-color: white;
+    display: inline-block;
+    width:50px;
+    padding:0 5px;
+}
+
+input{
+    height:44px;
+    border: solid black 1px;
+    border-radius: 2px;
+}
+
+.inputtext{
+    height: 132px;
+}
+
+.submitbtn{
+    margin-top:10px;
+    margin-left: auto;
+    width:50%;
+}
+
+.heroimage img{
+    height:560px;
+}

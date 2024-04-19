@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home img{
+    width:649px;
+}
+
+.dice{
+    width:250px;
+    height:250px;
+}
+
+.keypad_btn_unselect{
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #000;
+}
+
+.keypad_btn_selected{
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 4rem;
+    height: 4rem;
+    color:white;
+    background-color: #000;
+    border: 1px solid #000;
+}
