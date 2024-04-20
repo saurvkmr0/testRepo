@@ -1,10 +1,13 @@
 import { addDoc, collection } from 'firebase/firestore';
 import {db} from "../config/firebase";
 import { Formik,Form, Field } from 'formik';
-import React, { useState,useEffect } from 'react'
+import React, { useContext } from 'react'
+import { ToggleContext } from '../App';
 
 const AddNewContact = () => {
- 
+
+  const [isOpen, setIsOpen] = useContext(ToggleContext);
+
   const addContact= async(contact)=>{
     try {
       const contactRef = collection(db,"contacts");
@@ -24,6 +27,7 @@ const AddNewContact = () => {
         }}
         onSubmit={(values)=>
         {
+          setIsOpen(!isOpen);
           addContact(values);
           console.log(values);
         }} 

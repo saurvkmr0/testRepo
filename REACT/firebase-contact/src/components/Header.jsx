@@ -8,7 +8,7 @@ const NoContactScreen = ({dataReceived}) => {
   return (
     <div className=" ">
       <TitleBar />
-      <SearchBar dataReceived={dataReceived}/>
+      <SearchBar/>
     </div>
   )
 }
