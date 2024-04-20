@@ -1,7 +1,6 @@
 import NameCard from '../components/NameCard'
 
 const ContactScreen = ({contacts}) => {
-  console.log(contacts);
   return (
     <div className="" id='contact-screen'>
     {contacts.map((item) => (
