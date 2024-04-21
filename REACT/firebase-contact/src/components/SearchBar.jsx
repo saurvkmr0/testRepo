@@ -7,7 +7,7 @@ const SearchBar = () => {
   const [isOpen, setIsOpen] = useContext(ToggleContext);
 
   const addContactClick = () => {
-    setIsOpen(prev => !prev);
+    setIsOpen(!isOpen);
   };
 
   return (

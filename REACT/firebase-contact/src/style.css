@@ -18,7 +18,10 @@ body{
 
 .add-blur{
     filter: blur(2px);
-}  
+} 
+.remove-blur{
+    filter: blur(0px);
+} 
 
 
 .open-add-contact{
